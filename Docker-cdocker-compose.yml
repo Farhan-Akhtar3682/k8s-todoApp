@@ -1,0 +1,11 @@
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+
+  db:
+    image: postgres:18
+    environment:
+      POSTGRES_USER: example
+      POSTGRES_DB: exampledb
