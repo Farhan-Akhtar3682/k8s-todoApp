@@ -1,6 +1,6 @@
-From node
-Workdir /app
-Copy . .
-Run npm install
+FROM node
+WORKDIR /app
+COPY . .
+RUN npm install
 EXPOSE 6000
 CMD ["npm", "start"]
